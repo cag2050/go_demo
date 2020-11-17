@@ -11,4 +11,8 @@ func main() {
 	var arr3 = [...]int{1, 2, 3}
 	println(len(arr2))
 	println(len(arr3))
+
+
+	arr4 := []string{}
+	println(len(arr4))
 }
