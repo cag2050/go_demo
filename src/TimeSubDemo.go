@@ -11,7 +11,9 @@ func TimeSub(t1, t2 time.Time) int {
 }
 
 func main() {
-	var activeTimestamp int64 = 1605608500
-	sub := TimeSub(time.Now(), time.Unix(activeTimestamp, 0))
-	println(sub)
+	// 设备激活时间戳
+	var devActTime int64 = 1537977600
+	// 设备激活天数
+	devActDays := TimeSub(time.Now(), time.Unix(devActTime, 0))
+	println(devActDays)
 }
